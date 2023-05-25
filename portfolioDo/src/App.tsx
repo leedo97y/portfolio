@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './layout/Header';
 import Portfolio from './pages/Portfolio';
-import TomatoMusicPage from './pages/TomatoMusicPage';
+import TomutoPage from './pages/TomutoPage';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Portfolio />} />
-          <Route path='/tomato-music' element={<TomatoMusicPage />} />
+          <Route path='/tomuto' element={<TomutoPage />} />
         </Routes>
       </BrowserRouter>
     </div>
