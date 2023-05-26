@@ -3,6 +3,7 @@ import './App.css';
 import Header from './layout/Header';
 import Portfolio from './pages/Portfolio';
 import TomutoPage from './pages/TomutoPage';
+import TripmatchPage from './pages/TripmatchPage';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Portfolio />} />
           <Route path='/tomuto' element={<TomutoPage />} />
+          <Route path='/tripmatch' element={<TripmatchPage />} />
         </Routes>
       </BrowserRouter>
     </div>

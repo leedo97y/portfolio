@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
+import tomutoMain from '../images/tomatoMain.png';
+import tripmatchMain from '../images/tripmatchMain.png';
+import friedeggMain from '../images/friedeggMain.png';
+import retfilxMain from '../images/retfilxMain.png';
+import weatherMain from '../images/weatherMain.png';
 
 const TimeLine = () => {
   return (
-    <div className='grid grid-cols-2 gap-5 justify-center box-border w-fit h-fit m-5'>
-      <ol className='border-l border-neutral-300 dark:border-neutral-500 w-fit'>
+    <div className='flex flex-row gap-5 justify-center box-border w-min h-fit m-5'>
+      <ol className='border-l border-neutral-300 dark:border-neutral-500 w-full'>
         {/* <!--First item--> */}
         <li>
           <div className='flex-start flex items-center pt-3'>
@@ -19,9 +24,16 @@ const TimeLine = () => {
               </h4>
               <span className='ml-5 text-sky-500 font-bold pt-0.5'>100%</span>
             </div>
-            <p className='text-sm mb-2'>
-              Javascript, Pug, Webpack, Styled-component, fly.io
-            </p>
+            <div className='w-full flex flex-col gap-5 mt-2'>
+              <img
+                src={tomutoMain}
+                alt='tomuto main image'
+                className='w-full'
+              />
+              <p className='text-sm mb-2 italic'>
+                Javascript, Pug, Webpack, Styled-component, fly.io
+              </p>
+            </div>
             <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
               melon 사이트를 참고하여 개발한 뮤직 플레이어 사이트 프로젝트
               <br />
@@ -64,9 +76,16 @@ const TimeLine = () => {
               <h4 className='mb-1.5 text-xl font-semibold'>TripMatch</h4>
               <span className='ml-5 text-sky-500 font-bold pt-0.5'>30%</span>
             </div>
-            <p className='text-sm mb-2'>
-              React, Typescript, Styled-component, Redux, Cloudetype.io
-            </p>
+            <div className='w-full flex flex-col gap-5 mt-2'>
+              <img
+                src={tripmatchMain}
+                alt='tripmatch main image'
+                className='w-full'
+              />
+              <p className='text-sm mb-2 italic'>
+                React, Typescript, Styled-component, Redux, Cloudetype.io
+              </p>
+            </div>
             <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
               엘리스 SW 트랙 3기에서 진행한 여행 동행 매칭 서비스 프로젝트
               <br />
@@ -89,14 +108,16 @@ const TimeLine = () => {
               - Cloudtype.io를 통한 배포
               <br />
             </p>
-            <button
-              type='button'
-              className='mt-3 inline-block rounded bg-sky-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
-              data-te-ripple-init
-              data-te-ripple-color='light'
-            >
-              자세히 보기
-            </button>
+            <Link to='/tripmatch'>
+              <button
+                type='button'
+                className='mt-3 inline-block rounded bg-sky-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+                data-te-ripple-init
+                data-te-ripple-color='light'
+              >
+                자세히 보기
+              </button>
+            </Link>
           </div>
         </li>
         {/* <!--third item--> */}
@@ -112,7 +133,16 @@ const TimeLine = () => {
               <h4 className='mb-1.5 text-xl font-semibold'>Retfilx</h4>
               <span className='ml-5 text-sky-500 font-bold pt-0.5'>30%</span>
             </div>
-            <p className='text-sm mb-2'>React, Emotion, React-icons, Vercel</p>
+            <div className='w-full flex flex-col gap-5 mt-2'>
+              <img
+                src={retfilxMain}
+                alt='retfilx main image'
+                className='w-full'
+              />
+              <p className='text-sm mb-2 italic'>
+                React, Emotion, React-icons, Vercel
+              </p>
+            </div>
             <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
               React 스터디에서 진행한 넷플릭스 UI 클론 프로젝트
               <br />
@@ -139,7 +169,6 @@ const TimeLine = () => {
           </div>
         </li>
       </ol>
-
       <ol className='border-l border-neutral-300 dark:border-neutral-500 w-fit'>
         {/* <!--fourth item--> */}
         <li>
@@ -154,7 +183,16 @@ const TimeLine = () => {
               <h4 className='mb-1.5 text-xl font-semibold'>계란후라이</h4>
               <span className='ml-5 text-sky-500 font-bold pt-0.5'>30%</span>
             </div>
-            <p className='text-sm mb-2'>Javascript, CSS, HTML, Bulma, Trello</p>
+            <div className='w-full flex flex-col gap-5 mt-2'>
+              <img
+                src={friedeggMain}
+                alt='friedegg main image'
+                className='w-full'
+              />
+              <p className='text-sm mb-2 italic'>
+                Javascript, CSS, HTML, Bulma, Trello
+              </p>
+            </div>
             <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
               엘리스 SW 트랙 3기에서 진행한 농산물 거래 쇼핑몰 프로젝트
               <br />
@@ -191,7 +229,14 @@ const TimeLine = () => {
               <h4 className='mb-1.5 text-xl font-semibold'>오늘 뭐 입지?</h4>
               <span className='ml-5 text-sky-500 font-bold pt-0.5'>20%</span>
             </div>
-            <p className='text-sm mb-2'>Javascript, CSS, HTML</p>
+            <div className='w-full flex flex-col gap-5 mt-2'>
+              <img
+                src={weatherMain}
+                alt='weather main image'
+                className='w-full'
+              />
+              <p className='text-sm mb-2 italic'>Javascript, CSS, HTML</p>
+            </div>
             <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
               기온별 옷차림 웹사이트 프로젝트
               <br />
