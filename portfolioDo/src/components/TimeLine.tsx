@@ -8,7 +8,7 @@ import weatherMain from '../images/weatherMain.png';
 const TimeLine = () => {
   return (
     <div className='flex flex-row gap-5 justify-center box-border w-min h-fit m-5'>
-      <ol className='border-l border-neutral-300 dark:border-neutral-500 w-full'>
+      <ol className='border-l border-neutral-300 dark:border-neutral-500 w-full mr-20'>
         {/* <!--First item--> */}
         <li>
           <div className='flex-start flex items-center pt-3'>
@@ -55,7 +55,7 @@ const TimeLine = () => {
             <Link to='/tomuto'>
               <button
                 type='button'
-                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-out hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 '
                 data-te-ripple-init
                 data-te-ripple-color='light'
               >
@@ -115,7 +115,7 @@ const TimeLine = () => {
             <Link to='/tripmatch'>
               <button
                 type='button'
-                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-out hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 '
                 data-te-ripple-init
                 data-te-ripple-color='light'
               >
@@ -165,7 +165,7 @@ const TimeLine = () => {
             </p>
             <button
               type='button'
-              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
               data-te-ripple-init
               data-te-ripple-color='light'
             >
@@ -216,7 +216,7 @@ const TimeLine = () => {
             </p>
             <button
               type='button'
-              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
               data-te-ripple-init
               data-te-ripple-color='light'
             >
@@ -261,7 +261,7 @@ const TimeLine = () => {
             </p>
             <button
               type='button'
-              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
               data-te-ripple-init
               data-te-ripple-color='light'
             >

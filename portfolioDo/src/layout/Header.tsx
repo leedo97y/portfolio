@@ -6,7 +6,9 @@ const Header = () => {
         <div className='grid grid-cols-3 gap-4 m-8 text-xl font-bold'>
           <p>Profile.</p>
           <p>Project.</p>
-          <p>My Blog.</p>
+          <p>
+            <a href='https://velog.io/@dlehdus97'>My Blog.</a>
+          </p>
         </div>
       </div>
     </>

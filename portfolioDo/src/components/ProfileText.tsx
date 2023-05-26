@@ -1,47 +1,46 @@
 const ProfileText = () => {
   return (
-    <div className='flex flex-col gap-5 w-80 h-80 text-xl font-bold box-border'>
-      <p>
-        name. &nbsp;
-        <span className='text-base font-medium'>이도연 (LEE DO YEON)</span>
-      </p>
-      <p>
-        birth. &nbsp;
-        <span className='text-base font-medium'>1997. 10. 24</span>
-      </p>
-      <p>
-        address. &nbsp;
-        <span className='text-base font-medium'>서울시 노원구</span>
-      </p>
-      <p>
-        email. &nbsp;
+    <div className='flex flex-col gap-5 w-80 h-80 text-xl font-bold box-border pt-5'>
+      <div className='flex flex-row justify-between'>
+        <p>name.</p>
+        <span className='ml-5 text-base font-medium'>이도연 (LEE DO YEON)</span>
+      </div>
+      <div className='flex flex-row justify-between'>
+        <p>birth.</p>
+        <span className='ml-5 text-base font-medium'>1997. 10. 24</span>
+      </div>
+      <div className='flex flex-row justify-between'>
+        <p>address.</p>
+        <span className='ml-5 text-base font-medium'>서울시 노원구</span>
+      </div>
+
+      <div className='flex flex-row justify-between'>
+        <p>email.</p>
         <a
           href='mailto:dlehdus1433@gmail.com'
-          className='text-base font-medium text-blue-500'
+          className='ml-5 text-base font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-600 focus:text-blue-600 active:text-blue-700 '
         >
           dlehdus1433@gmail.com
         </a>
-      </p>
-
-      <br />
-      <p>
-        github. &nbsp;
+      </div>
+      <div className='flex flex-row mt-5 justify-between'>
+        <p>github.</p>
         <a
           href='https://github.com/leedo97y'
-          className='text-base font-medium text-blue-500'
+          className='ml-5 text-base font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-600 focus:text-blue-600 active:text-blue-700 '
         >
           https://github.com/leedo97y
         </a>
-      </p>
-      <p>
-        velog. &nbsp;
+      </div>
+      <div className='flex flex-row justify-between'>
+        <p>velog.</p>
         <a
           href='https://velog.io/@dlehdus97'
-          className='text-base font-medium text-blue-500'
+          className='ml-5 text-base font-medium text-blue-500 transition duration-150 ease-in-out hover:text-blue-600 focus:text-blue-600 active:text-blue-700 '
         >
           https://velog.io/@dlehdus97
         </a>
-      </p>
+      </div>
     </div>
   );
 };
