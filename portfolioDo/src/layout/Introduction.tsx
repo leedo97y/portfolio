@@ -1,14 +1,16 @@
-import IntroComponents from '../components/IntroComponents';
+import IntroduceComponents from '../components/IntroduceComponents';
 
 const Introduction = () => {
   return (
     <div className='flex flex-col mt-8'>
-      <div className='m-2 border-b-[1px] pb-2'>
-        <p className='text-2xl font-bold pl-2 bg-gray-700'>Introduction</p>
+      <div className='m-2  pb-2'>
+        <p className='text-2xl font-bold pl-2 bg-blue-900 p-[0.5px]'>
+          Introduction
+        </p>
       </div>
       <div className='flex flex-col gap-5 justify-center box-border h-fit m-5'>
         <div className='flex flex-col items-center'>
-          <IntroComponents />
+          <IntroduceComponents />
         </div>
       </div>
     </div>

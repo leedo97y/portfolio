@@ -17,7 +17,7 @@ const ProfileText = () => {
         email. &nbsp;
         <a
           href='mailto:dlehdus1433@gmail.com'
-          className='text-base font-medium text-sky-500'
+          className='text-base font-medium text-blue-500'
         >
           dlehdus1433@gmail.com
         </a>
@@ -28,7 +28,7 @@ const ProfileText = () => {
         github. &nbsp;
         <a
           href='https://github.com/leedo97y'
-          className='text-base font-medium text-sky-500'
+          className='text-base font-medium text-blue-500'
         >
           https://github.com/leedo97y
         </a>
@@ -37,7 +37,7 @@ const ProfileText = () => {
         velog. &nbsp;
         <a
           href='https://velog.io/@dlehdus97'
-          className='text-base font-medium text-sky-500'
+          className='text-base font-medium text-blue-500'
         >
           https://velog.io/@dlehdus97
         </a>

@@ -12,7 +12,7 @@ const TimeLine = () => {
         {/* <!--First item--> */}
         <li>
           <div className='flex-start flex items-center pt-3'>
-            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-cyan dark:bg-cyan-700'></div>
+            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
               2023. 03 - 2023. 04
             </p>
@@ -22,7 +22,8 @@ const TimeLine = () => {
               <h4 className='mb-1.5 text-xl font-semibold'>
                 Tomuto ( Tomato-Music )
               </h4>
-              <span className='ml-5 text-sky-500 font-bold pt-0.5'>100%</span>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>100%</span>
+              <span className='ml-3 text-slate-500 font-bold pt-0.5'>FE 1</span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
               <img
@@ -54,7 +55,7 @@ const TimeLine = () => {
             <Link to='/tomuto'>
               <button
                 type='button'
-                className='mt-3 inline-block rounded bg-sky-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
                 data-te-ripple-init
                 data-te-ripple-color='light'
               >
@@ -66,7 +67,7 @@ const TimeLine = () => {
         {/* <!--Second item--> */}
         <li>
           <div className='flex-start flex items-center pt-3'>
-            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-cyan dark:bg-cyan-700'></div>
+            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
               2022. 12 - 2023. 01
             </p>
@@ -74,7 +75,10 @@ const TimeLine = () => {
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>TripMatch</h4>
-              <span className='ml-5 text-sky-500 font-bold pt-0.5'>30%</span>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>30%</span>
+              <span className='ml-3 text-slate-500 font-bold pt-0.5'>
+                FE 5 &nbsp; BE 1
+              </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
               <img
@@ -111,7 +115,7 @@ const TimeLine = () => {
             <Link to='/tripmatch'>
               <button
                 type='button'
-                className='mt-3 inline-block rounded bg-sky-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
                 data-te-ripple-init
                 data-te-ripple-color='light'
               >
@@ -123,7 +127,7 @@ const TimeLine = () => {
         {/* <!--third item--> */}
         <li>
           <div className='flex-start flex items-center pt-2'>
-            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-cyan dark:bg-cyan-700'></div>
+            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
               2022. 10 - 2022. 11
             </p>
@@ -131,7 +135,8 @@ const TimeLine = () => {
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>Retfilx</h4>
-              <span className='ml-5 text-sky-500 font-bold pt-0.5'>30%</span>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>30%</span>
+              <span className='ml-3 text-slate-500 font-bold pt-0.5'>FE 5</span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
               <img
@@ -160,7 +165,7 @@ const TimeLine = () => {
             </p>
             <button
               type='button'
-              className='mt-3 inline-block rounded bg-sky-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
               data-te-ripple-init
               data-te-ripple-color='light'
             >
@@ -173,7 +178,7 @@ const TimeLine = () => {
         {/* <!--fourth item--> */}
         <li>
           <div className='flex-start flex items-center pt-2'>
-            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-cyan dark:bg-cyan-700'></div>
+            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
               2022. 09 - 2022. 10
             </p>
@@ -181,7 +186,10 @@ const TimeLine = () => {
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>계란후라이</h4>
-              <span className='ml-5 text-sky-500 font-bold pt-0.5'>30%</span>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>30%</span>
+              <span className='ml-3 text-slate-500 font-bold pt-0.5'>
+                FE 3 &nbsp; BE 2
+              </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
               <img
@@ -208,7 +216,7 @@ const TimeLine = () => {
             </p>
             <button
               type='button'
-              className='mt-3 inline-block rounded bg-sky-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
               data-te-ripple-init
               data-te-ripple-color='light'
             >
@@ -219,7 +227,7 @@ const TimeLine = () => {
         {/* <!--fifth item--> */}
         <li>
           <div className='flex-start flex items-center pt-2'>
-            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-cyan dark:bg-cyan-700'></div>
+            <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
               2022. 02 - 2022. 03
             </p>
@@ -227,7 +235,10 @@ const TimeLine = () => {
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>오늘 뭐 입지?</h4>
-              <span className='ml-5 text-sky-500 font-bold pt-0.5'>20%</span>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>20%</span>
+              <span className='ml-3 text-slate-500 font-bold pt-0.5'>
+                FE 3 &nbsp; BE 2
+              </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
               <img
@@ -250,7 +261,7 @@ const TimeLine = () => {
             </p>
             <button
               type='button'
-              className='mt-3 inline-block rounded bg-sky-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
+              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]'
               data-te-ripple-init
               data-te-ripple-color='light'
             >
