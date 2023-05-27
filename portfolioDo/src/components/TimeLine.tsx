@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { PortfolioDataType } from '../types/dataType';
 import tomutoMain from '../images/tomatoMain.png';
 import tripmatchMain from '../images/tripmatchMain.png';
 import friedeggMain from '../images/friedeggMain.png';
@@ -6,6 +8,25 @@ import retfilxMain from '../images/retfilxMain.png';
 import weatherMain from '../images/weatherMain.png';
 
 const TimeLine = () => {
+  const [data, setData] = useState<PortfolioDataType>();
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const fetchData = await fetch('./data.json').then((res) => res.json());
+
+        if (fetchData) {
+          setData(fetchData);
+        }
+      } catch (err: unknown) {
+        console.error(err);
+      }
+    };
+    getData();
+  }, []);
+
+  console.log(data);
+
   return (
     <div className='flex flex-row gap-5 justify-center box-border w-min h-fit m-5'>
       <ol className='border-l border-neutral-300 dark:border-neutral-500 w-full mr-20'>
@@ -14,16 +35,20 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-3'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              2023. 03 - 2023. 04
+              {data?.project[0].period[0]} - {data?.project[0].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>
-                Tomuto ( Tomato-Music )
+                {data?.project[0].name}
               </h4>
-              <span className='ml-5 text-blue-500 font-bold pt-0.5'>100%</span>
-              <span className='ml-3 text-slate-500 font-bold pt-0.5'>FE 1</span>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>
+                {data?.project[0].percent}
+              </span>
+              <span className='ml-3 text-slate-500 font-bold pt-0.5'>
+                {data?.project[0].teamInfo}
+              </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
               <img
@@ -32,25 +57,20 @@ const TimeLine = () => {
                 className='w-full'
               />
               <p className='text-sm mb-2 italic'>
-                Javascript, Pug, Webpack, Styled-component, fly.io
+                {data?.project[0].stack
+                  .filter(
+                    (item) =>
+                      item !== 'Git' &&
+                      item !== 'Github' &&
+                      item !== 'Gitlab' &&
+                      item !== 'Figma' &&
+                      item !== 'Figjam',
+                  )
+                  .join(', ')}
               </p>
             </div>
-            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
-              melon 사이트를 참고하여 개발한 뮤직 플레이어 사이트 프로젝트
-              <br />
-              <br />
-              - localStorage를 활용한 사용자 개인 플레이리스트 개발
-              <br />
-              - last.fm API를 통해 아티스트 설명 페이지 개발
-              <br />
-              - fly.io를 통한 배포
-              <br />
-              - Styled-component를 사용하여 스타일링
-              <br />
-              - Pug를 통한 손쉽고 간단한 마크업
-              <br />
-              - Webpack을 통한 image, audio 파일 번들링을 통해 성능 최적화
-              <br />
+            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm whitespace-pre-wrap'>
+              {data?.project[0].shortDesc}
             </p>
             <Link to='/tomuto'>
               <button
@@ -69,15 +89,19 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-3'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              2022. 12 - 2023. 01
+              {data?.project[1].period[0]} - {data?.project[1].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
-              <h4 className='mb-1.5 text-xl font-semibold'>TripMatch</h4>
-              <span className='ml-5 text-blue-500 font-bold pt-0.5'>30%</span>
+              <h4 className='mb-1.5 text-xl font-semibold'>
+                {data?.project[1].name.slice(0, 10)}
+              </h4>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>
+                {data?.project[1].percent}
+              </span>
               <span className='ml-3 text-slate-500 font-bold pt-0.5'>
-                FE 5 &nbsp; BE 1
+                {data?.project[1].teamInfo}
               </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
@@ -87,30 +111,24 @@ const TimeLine = () => {
                 className='w-full'
               />
               <p className='text-sm mb-2 italic'>
-                React, Typescript, Styled-component, Redux, Cloudetype.io
+                {data?.project[1].stack
+                  .filter(
+                    (item) =>
+                      item !== 'Git' &&
+                      item !== 'Github' &&
+                      item !== 'Gitlab' &&
+                      item !== 'Figma' &&
+                      item !== 'Figjam',
+                  )
+                  .join(', ')}
               </p>
             </div>
-            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
-              엘리스 SW 트랙 3기에서 진행한 여행 동행 매칭 서비스 프로젝트
-              <br />
-              <br />
-              <span className='bg-yellow-100 p-1 pr-3 pl-3 text-gray-800'>
-                🏆 프로젝트 최우수상 수상 - 17팀 중 2등
+            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 mt-3 text-sm whitespace-pre-wrap'>
+              <span className='bg-yellow-100 p-1 pr-3 pl-3  text-gray-800'>
+                🏆 {data?.certificate[0].name}&nbsp;-&nbsp;
+                {data?.certificate[0].description}
               </span>
-              <br />
-              <br />
-              - Figma을 사용하여 사용자 관련 페이지 기획
-              <br />
-              - Typescript를 사용하여 타입 안정성을 높임.
-              <br />
-              - globalStyle 적용, Theme color를 정해 코드에 적용
-              <br />
-              - 인증정보를 담은 authAxios 사용
-              <br />
-              - Date 객체를 통한 리뷰 페이지 UI 개선
-              <br />
-              - Cloudtype.io를 통한 배포
-              <br />
+              {data?.project[1].shortDesc}
             </p>
             <Link to='/tripmatch'>
               <button
@@ -129,14 +147,20 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-2'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              2022. 10 - 2022. 11
+              {data?.project[2].period[0]} - {data?.project[2].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
-              <h4 className='mb-1.5 text-xl font-semibold'>Retfilx</h4>
-              <span className='ml-5 text-blue-500 font-bold pt-0.5'>30%</span>
-              <span className='ml-3 text-slate-500 font-bold pt-0.5'>FE 5</span>
+              <h4 className='mb-1.5 text-xl font-semibold'>
+                {data?.project[2].name}
+              </h4>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>
+                {data?.project[2].percent}
+              </span>
+              <span className='ml-3 text-slate-500 font-bold pt-0.5'>
+                {data?.project[2].teamInfo}
+              </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
               <img
@@ -145,22 +169,21 @@ const TimeLine = () => {
                 className='w-full'
               />
               <p className='text-sm mb-2 italic'>
-                React, Emotion, React-icons, Vercel
+                {data?.project[2].stack
+                  .filter(
+                    (item) =>
+                      item !== 'Git' &&
+                      item !== 'Github' &&
+                      item !== 'Gitlab' &&
+                      item !== 'Figma' &&
+                      item !== 'Figjam' &&
+                      item !== 'SourceTree',
+                  )
+                  .join(', ')}
               </p>
             </div>
-            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
-              React 스터디에서 진행한 넷플릭스 UI 클론 프로젝트
-              <br />
-              <br />
-              - CSS hover, active 속성을 활용한 header의 드롭다운 프로필
-              <br />
-              - JIRA를 통한 프로젝트 일정 관리
-              <br />
-              - grid, flex를 혼합하여 사용, UI 구현
-              <br />
-              - Vercel을 통한 배포
-              <br />
-              - Emotion, React-icon을 사용하여 스타일링
+            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm whitespace-pre-wrap'>
+              {data?.project[2].shortDesc}
               <br />
             </p>
             <Link to='/retfilx'>
@@ -182,15 +205,19 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-2'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              2022. 09 - 2022. 10
+              {data?.project[3].period[0]} - {data?.project[3].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
-              <h4 className='mb-1.5 text-xl font-semibold'>계란후라이</h4>
-              <span className='ml-5 text-blue-500 font-bold pt-0.5'>30%</span>
+              <h4 className='mb-1.5 text-xl font-semibold'>
+                {data?.project[3].name}
+              </h4>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>
+                {data?.project[3].percent}
+              </span>
               <span className='ml-3 text-slate-500 font-bold pt-0.5'>
-                FE 3 &nbsp; BE 2
+                {data?.project[3].teamInfo}
               </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
@@ -200,21 +227,21 @@ const TimeLine = () => {
                 className='w-full'
               />
               <p className='text-sm mb-2 italic'>
-                Javascript, CSS, HTML, Bulma, Trello
+                {data?.project[3].stack
+                  .filter(
+                    (item) =>
+                      item !== 'Git' &&
+                      item !== 'Github' &&
+                      item !== 'Gitlab' &&
+                      item !== 'Figma' &&
+                      item !== 'Figjam' &&
+                      item !== 'SourceTree',
+                  )
+                  .join(', ')}
               </p>
             </div>
-            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
-              엘리스 SW 트랙 3기에서 진행한 농산물 거래 쇼핑몰 프로젝트
-              <br />
-              <br />
-              - jwt를 사용한 로그인
-              <br />
-              - fetch 함수의 POST 메서드를 사용한 로그인 정보 수정 페이지
-              <br />
-              - Trello를 통한 프로젝트 일정 관리
-              <br />
-              - Bulma, CSS를 통한 스타일링
-              <br />
+            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm whitespace-pre-wrap'>
+              {data?.project[3].shortDesc}
             </p>
             <Link to='/friedegg'>
               <button
@@ -233,15 +260,19 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-2'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              2022. 02 - 2022. 03
+              {data?.project[4].period[0]} - {data?.project[4].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
-              <h4 className='mb-1.5 text-xl font-semibold'>오늘 뭐 입지?</h4>
-              <span className='ml-5 text-blue-500 font-bold pt-0.5'>20%</span>
+              <h4 className='mb-1.5 text-xl font-semibold'>
+                {data?.project[4].name}
+              </h4>
+              <span className='ml-5 text-blue-500 font-bold pt-0.5'>
+                {data?.project[4].percent}
+              </span>
               <span className='ml-3 text-slate-500 font-bold pt-0.5'>
-                FE 4 &nbsp; BE 1
+                {data?.project[4].teamInfo}
               </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
@@ -250,18 +281,22 @@ const TimeLine = () => {
                 alt='weather main image'
                 className='w-full'
               />
-              <p className='text-sm mb-2 italic'>Javascript, CSS, HTML</p>
+              <p className='text-sm mb-2 italic'>
+                {data?.project[4].stack
+                  .filter(
+                    (item) =>
+                      item !== 'Git' &&
+                      item !== 'Github' &&
+                      item !== 'Gitlab' &&
+                      item !== 'Figma' &&
+                      item !== 'Figjam' &&
+                      item !== 'SourceTree',
+                  )
+                  .join(', ')}
+              </p>
             </div>
-            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm'>
-              기온별 옷차림 웹사이트 프로젝트
-              <br />
-              <br />
-              - 로그인, 회원가입, 메인 페이지 마크업
-              <br />
-              - 위치 기반 Open Weather API를 사용한 날씨 알림 기능
-              <br />
-              - 페이지 전체 style 개선
-              <br />
+            <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm whitespace-pre-wrap'>
+              {data?.project[4].shortDesc}
             </p>
             <Link to='/weather'>
               <button
