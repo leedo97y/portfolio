@@ -1,6 +1,6 @@
 const ProfileText = () => {
   return (
-    <div className='flex flex-col gap-5 w-80 h-80 text-xl font-bold box-border pt-5'>
+    <div className='flex flex-col gap-5 w-fit h-fit text-xl font-bold box-border '>
       <div className='flex flex-row justify-between'>
         <p>name.</p>
         <span className='ml-5 text-base font-medium'>이도연 (LEE DO YEON)</span>

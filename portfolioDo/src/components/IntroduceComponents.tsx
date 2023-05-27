@@ -1,6 +1,6 @@
 const IntroComponents = () => {
   return (
-    <div className='flex flex-col gap-5 border p-8 w-fit justify-center'>
+    <div className='flex flex-col gap-5 border p-8 w-fit h-fit justify-center'>
       <p className='font-semibold text-l'>
         소통을 잘하는 프론트엔드 개발자 이도연 입니다.
       </p>

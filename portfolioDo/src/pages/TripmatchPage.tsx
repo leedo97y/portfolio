@@ -1,15 +1,18 @@
 import tripmatchMain from '../images/tripmatchMain.png';
-import tomuto from '../images/tomuto.png';
+import tripmatch from '../images/tripmatch.png';
 
 const TripmatchPage = () => {
   return (
     <div className='flex flex-col items-center w-full'>
       <div className='flex flex-col gap-5 m-10 w-2/3'>
         <div className='flex flex-row items-center gap-4 mb-8'>
-          <img src={tomuto} alt='' className='w-20' />
-          <h1 className='font-bold text-4xl mb-3s'>
-            TripMatch - 여행 동행자 매칭 서비스
-          </h1>
+          <img src={tripmatch} alt='tripmatch logo' className='w-20' />
+          <div>
+            <h1 className='font-bold text-4xl mb-1.5'>
+              TripMatch - 여행 동행자 매칭 서비스
+            </h1>
+            <p className='text-sm text-slate-400'>2022. 12 - 2023. 01</p>
+          </div>
         </div>
         <div className='flex flex-col w-full'>
           <p className='font-bold text-2xl mb-5 border-b-[0.5px] pb-2'>

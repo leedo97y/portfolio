@@ -7,7 +7,12 @@ const TomatoMusicPage = () => {
       <div className='flex flex-col gap-5 m-10 w-2/3'>
         <div className='flex flex-row items-center gap-4 mb-8'>
           <img src={tomuto} alt='' className='w-20' />
-          <h1 className='font-bold text-4xl mb-3s'>Tomuto ( Tomato-Music )</h1>
+          <div>
+            <h1 className='font-bold text-4xl mb-1.5'>
+              Tomuto ( Tomato-Music )
+            </h1>
+            <p className='text-sm text-slate-400'>2023. 03 - 2023. 04</p>
+          </div>
         </div>
         <div className='flex flex-col w-full'>
           <p className='font-bold text-2xl mb-5 border-b-[0.5px] pb-2'>
@@ -30,7 +35,7 @@ const TomatoMusicPage = () => {
         </div>
         <div className='flex flex-col justify-center gap-5 border-[0.5px] p-5 mb-7'>
           <p className='font-bold text-xl'>기술 스택</p>
-          <div>JavaScript, Scss, Webpack, Pug, Git, Github, Fly.io</div>
+          <div>JavaScript, Pug, Scss, Webpack, Git, Github, Fly.io</div>
         </div>
         <div className='flex flex-col justify-center gap-5'>
           <p className='font-bold text-2xl border-b-[0.5px] pb-2'>

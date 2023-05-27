@@ -163,14 +163,16 @@ const TimeLine = () => {
               - Emotion, React-icon을 사용하여 스타일링
               <br />
             </p>
-            <button
-              type='button'
-              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
-              data-te-ripple-init
-              data-te-ripple-color='light'
-            >
-              자세히 보기
-            </button>
+            <Link to='/retfilx'>
+              <button
+                type='button'
+                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
+                data-te-ripple-init
+                data-te-ripple-color='light'
+              >
+                자세히 보기
+              </button>
+            </Link>
           </div>
         </li>
       </ol>
@@ -214,14 +216,16 @@ const TimeLine = () => {
               - Bulma, CSS를 통한 스타일링
               <br />
             </p>
-            <button
-              type='button'
-              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
-              data-te-ripple-init
-              data-te-ripple-color='light'
-            >
-              자세히 보기
-            </button>
+            <Link to='/friedegg'>
+              <button
+                type='button'
+                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
+                data-te-ripple-init
+                data-te-ripple-color='light'
+              >
+                자세히 보기
+              </button>
+            </Link>
           </div>
         </li>
         {/* <!--fifth item--> */}
@@ -237,7 +241,7 @@ const TimeLine = () => {
               <h4 className='mb-1.5 text-xl font-semibold'>오늘 뭐 입지?</h4>
               <span className='ml-5 text-blue-500 font-bold pt-0.5'>20%</span>
               <span className='ml-3 text-slate-500 font-bold pt-0.5'>
-                FE 3 &nbsp; BE 2
+                FE 4 &nbsp; BE 1
               </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
@@ -259,14 +263,16 @@ const TimeLine = () => {
               - 페이지 전체 style 개선
               <br />
             </p>
-            <button
-              type='button'
-              className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
-              data-te-ripple-init
-              data-te-ripple-color='light'
-            >
-              자세히 보기
-            </button>
+            <Link to='/weather'>
+              <button
+                type='button'
+                className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-o hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 )]'
+                data-te-ripple-init
+                data-te-ripple-color='light'
+              >
+                자세히 보기
+              </button>
+            </Link>
           </div>
         </li>
       </ol>
