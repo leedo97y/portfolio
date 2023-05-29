@@ -21,8 +21,6 @@ const RetfilxPage = () => {
     getData();
   }, []);
 
-  console.log(data);
-
   return (
     <div className='flex flex-col items-center w-full'>
       <div className='flex flex-col gap-5 m-10 w-2/3'>

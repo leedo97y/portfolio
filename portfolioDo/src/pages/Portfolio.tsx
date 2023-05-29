@@ -1,13 +1,13 @@
-// import Introduction from '../layout/Introduction';
+import Header from '../layout/Header';
 import Profile from '../layout/Profile';
 import Projects from '../layout/Projects';
 import chat from '../images/chat.png';
-// import { useEffect, useState } from 'react';
 
 const Portfolio = () => {
   return (
-    <>
-      <div className='grid justify-center m-5 w-screen box-border mt-10 overflow-hidden hover:overflow-y-scroll'>
+    <div>
+      <Header />
+      <div className='grid justify-center m-5 w-screen box-border mt-10 '>
         <div className='flex flex-row items-center w-full'>
           <img
             src={chat}
@@ -19,10 +19,9 @@ const Portfolio = () => {
           </p>
         </div>
         <Profile />
-        {/* <Introduction /> */}
         <Projects />
       </div>
-    </>
+    </div>
   );
 };
 

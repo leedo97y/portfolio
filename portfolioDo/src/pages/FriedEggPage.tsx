@@ -21,8 +21,6 @@ const FriedEggPage = () => {
     getData();
   }, []);
 
-  console.log(data);
-
   return (
     <div className='flex flex-col items-center w-full'>
       <div className='flex flex-col gap-5 m-10 w-2/3'>
@@ -30,10 +28,10 @@ const FriedEggPage = () => {
           <img src={friedegg} alt='' className='w-20' />
           <div>
             <h1 className='font-bold text-4xl mb-1.5'>
-              {data?.project[3].name}
+              {data?.project[1].name}
             </h1>
             <p className='text-sm text-slate-400'>
-              {data?.project[3].period[0]} - {data?.project[3].period[1]}
+              {data?.project[1].period[0]} - {data?.project[1].period[1]}
             </p>
           </div>
         </div>
@@ -47,23 +45,23 @@ const FriedEggPage = () => {
           <p className='font-bold text-xl'>프로젝트 링크</p>
           <div>
             <p className='font-bold text-base mb-1'>Github. </p>
-            <a className='text-blue-600'>{data?.project[3].repoUrl}</a>
+            <a className='text-blue-600'>{data?.project[1].repoUrl}</a>
           </div>
           <div>
             <p className=' font-bold text-base mb-1'>Video. </p>
-            <a className='text-blue-600'>{data?.project[3].videoUrl} </a>
+            <a className='text-blue-600'>{data?.project[1].videoUrl} </a>
           </div>
         </div>
         <div className='flex flex-col justify-center gap-5 border-[0.5px] p-5 mb-7'>
           <p className='font-bold text-xl'>기술 스택</p>
-          <div>{data?.project[3].stack.join(', ')}</div>
+          <div>{data?.project[1].stack.join(', ')}</div>
         </div>
         <div className='flex flex-col justify-center gap-5'>
           <p className='font-bold text-2xl border-b-[0.5px] pb-2'>
             프로젝트 설명
           </p>
           <div className='flex flex-col w-full gap-2 leading-7 whitespace-pre-wrap'>
-            {data?.project[3].description}
+            {data?.project[1].description}
           </div>
         </div>
       </div>

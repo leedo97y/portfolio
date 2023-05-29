@@ -35,19 +35,19 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-3'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              {data?.project[0].period[0]} - {data?.project[0].period[1]}
+              {data?.project[4].period[0]} - {data?.project[4].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>
-                {data?.project[0].name}
+                {data?.project[4].name}
               </h4>
               <span className='ml-5 text-blue-500 font-bold pt-0.5'>
-                {data?.project[0].percent}
+                {data?.project[4].percent}
               </span>
               <span className='ml-3 text-slate-500 font-bold pt-0.5'>
-                {data?.project[0].teamInfo}
+                {data?.project[4].teamInfo}
               </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
@@ -57,7 +57,7 @@ const TimeLine = () => {
                 className='w-full'
               />
               <p className='text-sm mb-2 italic'>
-                {data?.project[0].stack
+                {data?.project[4].stack
                   .filter(
                     (item) =>
                       item !== 'Git' &&
@@ -70,9 +70,9 @@ const TimeLine = () => {
               </p>
             </div>
             <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm whitespace-pre-wrap'>
-              {data?.project[0].shortDesc}
+              {data?.project[4].shortDesc}
             </p>
-            <Link to='/tomuto'>
+            <Link to='/tomuto' preventScrollReset={true}>
               <button
                 type='button'
                 className='mt-3 inline-block rounded bg-blue-600 px-4 pb-[5px] pt-[6px] text-xs font-medium leading-normal text-white transition duration-150 ease-in-out hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-700 '
@@ -89,19 +89,19 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-3'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              {data?.project[1].period[0]} - {data?.project[1].period[1]}
+              {data?.project[3].period[0]} - {data?.project[3].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>
-                {data?.project[1].name.slice(0, 10)}
+                {data?.project[3].name.slice(0, 10)}
               </h4>
               <span className='ml-5 text-blue-500 font-bold pt-0.5'>
-                {data?.project[1].percent}
+                {data?.project[3].percent}
               </span>
               <span className='ml-3 text-slate-500 font-bold pt-0.5'>
-                {data?.project[1].teamInfo}
+                {data?.project[3].teamInfo}
               </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
@@ -111,7 +111,7 @@ const TimeLine = () => {
                 className='w-full'
               />
               <p className='text-sm mb-2 italic'>
-                {data?.project[1].stack
+                {data?.project[3].stack
                   .filter(
                     (item) =>
                       item !== 'Git' &&
@@ -128,7 +128,7 @@ const TimeLine = () => {
                 🏆 {data?.certificate[0].name}&nbsp;-&nbsp;
                 {data?.certificate[0].description}
               </span>
-              {data?.project[1].shortDesc}
+              {data?.project[3].shortDesc}
             </p>
             <Link to='/tripmatch'>
               <button
@@ -205,19 +205,19 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-2'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              {data?.project[3].period[0]} - {data?.project[3].period[1]}
+              {data?.project[1].period[0]} - {data?.project[1].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>
-                {data?.project[3].name}
+                {data?.project[1].name}
               </h4>
               <span className='ml-5 text-blue-500 font-bold pt-0.5'>
-                {data?.project[3].percent}
+                {data?.project[1].percent}
               </span>
               <span className='ml-3 text-slate-500 font-bold pt-0.5'>
-                {data?.project[3].teamInfo}
+                {data?.project[1].teamInfo}
               </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
@@ -227,7 +227,7 @@ const TimeLine = () => {
                 className='w-full'
               />
               <p className='text-sm mb-2 italic'>
-                {data?.project[3].stack
+                {data?.project[1].stack
                   .filter(
                     (item) =>
                       item !== 'Git' &&
@@ -241,7 +241,7 @@ const TimeLine = () => {
               </p>
             </div>
             <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm whitespace-pre-wrap'>
-              {data?.project[3].shortDesc}
+              {data?.project[1].shortDesc}
             </p>
             <Link to='/friedegg'>
               <button
@@ -260,19 +260,19 @@ const TimeLine = () => {
           <div className='flex-start flex items-center pt-2'>
             <div className='-ml-[5px] mr-3 h-[9px] w-[9px] rounded-full bg-blue dark:bg-blue-700'></div>
             <p className='text-sm text-neutral-500 dark:text-neutral-300'>
-              {data?.project[4].period[0]} - {data?.project[4].period[1]}
+              {data?.project[0].period[0]} - {data?.project[0].period[1]}
             </p>
           </div>
           <div className='mb-6 ml-4 mt-2'>
             <div className='flex flex-row'>
               <h4 className='mb-1.5 text-xl font-semibold'>
-                {data?.project[4].name}
+                {data?.project[0].name}
               </h4>
               <span className='ml-5 text-blue-500 font-bold pt-0.5'>
-                {data?.project[4].percent}
+                {data?.project[0].percent}
               </span>
               <span className='ml-3 text-slate-500 font-bold pt-0.5'>
-                {data?.project[4].teamInfo}
+                {data?.project[0].teamInfo}
               </span>
             </div>
             <div className='w-full flex flex-col gap-5 mt-2'>
@@ -282,7 +282,7 @@ const TimeLine = () => {
                 className='w-full'
               />
               <p className='text-sm mb-2 italic'>
-                {data?.project[4].stack
+                {data?.project[0].stack
                   .filter(
                     (item) =>
                       item !== 'Git' &&
@@ -296,7 +296,7 @@ const TimeLine = () => {
               </p>
             </div>
             <p className='mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm whitespace-pre-wrap'>
-              {data?.project[4].shortDesc}
+              {data?.project[0].shortDesc}
             </p>
             <Link to='/weather'>
               <button

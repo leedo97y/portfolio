@@ -21,8 +21,6 @@ const WeatherPage = () => {
     getData();
   }, []);
 
-  console.log(data);
-
   return (
     <>
       <div className='flex flex-col items-center w-full'>
@@ -31,10 +29,10 @@ const WeatherPage = () => {
             <img src={weather} alt='weather logo' className='w-20 mr-3' />
             <div>
               <h1 className='font-bold text-4xl mb-1.5'>
-                {data?.project[4].name}
+                {data?.project[0].name}
               </h1>
               <p className='text-sm text-slate-400'>
-                {data?.project[4].period[0]} - {data?.project[4].period[1]}
+                {data?.project[0].period[0]} - {data?.project[0].period[1]}
               </p>
             </div>
           </div>
@@ -48,23 +46,23 @@ const WeatherPage = () => {
             <p className='font-bold text-xl'>프로젝트 링크</p>
             <div>
               <p className='font-bold text-base mb-1'>Github. </p>
-              <a className='text-blue-600'>{data?.project[4].repoUrl}</a>
+              <a className='text-blue-600'>{data?.project[0].repoUrl}</a>
             </div>
             <div>
               <p className=' font-bold text-base mb-1'>Video. </p>
-              <a className='text-blue-600'>{data?.project[4].videoUrl}</a>
+              <a className='text-blue-600'>{data?.project[0].videoUrl}</a>
             </div>
           </div>
           <div className='flex flex-col justify-center gap-5 border-[0.5px] p-5 mb-7'>
             <p className='font-bold text-xl'>기술 스택</p>
-            <div>{data?.project[4].stack.join(', ')}</div>
+            <div>{data?.project[0].stack.join(', ')}</div>
           </div>
           <div className='flex flex-col justify-center gap-5'>
             <p className='font-bold text-2xl border-b-[0.5px] pb-2'>
               프로젝트 설명
             </p>
             <div className='flex flex-col w-full gap-2 leading-7 whitespace-pre-wrap'>
-              {data?.project[4].description}
+              {data?.project[0].description}
             </div>
           </div>
         </div>
