@@ -2,7 +2,7 @@ import IntroduceComponents from '../components/IntroduceComponents';
 import ProfileText from '../components/ProfileText';
 // import ProfileImage from '../images/myImage2.png';
 
-const Profile = () => {
+const Profile: React.FC = () => {
   return (
     <div className='flex flex-col w-fit h-full'>
       <div className='m-2 pb-2 w-auto h-full'>

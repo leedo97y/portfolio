@@ -7,7 +7,7 @@ import friedeggMain from '../images/friedeggMain.png';
 import retfilxMain from '../images/retfilxMain.png';
 import weatherMain from '../images/weatherMain.png';
 
-const TimeLine = () => {
+const TimeLine: React.FC = () => {
   const [data, setData] = useState<PortfolioDataType>();
 
   useEffect(() => {

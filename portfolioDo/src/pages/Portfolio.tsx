@@ -1,9 +1,26 @@
+import { useEffect, useState } from 'react';
 import Header from '../layout/Header';
 import Profile from '../layout/Profile';
 import Projects from '../layout/Projects';
 import chat from '../images/chat.png';
 
-const Portfolio = () => {
+const Portfolio: React.FC = () => {
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  console.log(scrollPosition);
+
   return (
     <div>
       <Header />

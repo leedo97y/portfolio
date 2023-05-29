@@ -3,7 +3,7 @@ import { PortfolioDataType } from '../types/dataType';
 import friedeggMain from '../images/friedeggMain.png';
 import friedegg from '../images/friedegg.png';
 
-const FriedEggPage = () => {
+const FriedEggPage: React.FC = () => {
   const [data, setData] = useState<PortfolioDataType>();
 
   useEffect(() => {

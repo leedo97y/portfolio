@@ -1,4 +1,4 @@
-const ProfileText = () => {
+const ProfileText: React.FC = () => {
   return (
     <div className='flex flex-col gap-5 w-fit h-fit text-xl font-bold box-border '>
       <div className='flex flex-row justify-between'>

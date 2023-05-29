@@ -3,7 +3,7 @@ import { PortfolioDataType } from '../types/dataType';
 import weatherMain from '../images/weatherMain.png';
 import weather from '../images/weather.png';
 
-const WeatherPage = () => {
+const WeatherPage: React.FC = () => {
   const [data, setData] = useState<PortfolioDataType>();
 
   useEffect(() => {

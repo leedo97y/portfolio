@@ -1,4 +1,4 @@
-const IntroComponents = () => {
+const IntroComponents: React.FC = () => {
   return (
     <div className='flex flex-col gap-5 border p-8 w-fit h-fit justify-center'>
       <p className='font-semibold text-l'>

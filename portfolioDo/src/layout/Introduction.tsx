@@ -1,6 +1,6 @@
 import IntroduceComponents from '../components/IntroduceComponents';
 
-const Introduction = () => {
+const Introduction: React.FC = () => {
   return (
     <div className='flex flex-col mt-8'>
       <div className='m-2  pb-2'>
