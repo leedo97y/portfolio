@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PortfolioDataType } from '../types/dataType';
-import tomatoMain from '../images/tomatoMain.png';
-import tomuto from '../images/tomuto.png';
+import tomatoMain from '@images/tomatoMain.png';
+import tomuto from '@images/tomuto.png';
 
 const TomatoMusicPage: React.FC = () => {
   const [data, setData] = useState<PortfolioDataType>();

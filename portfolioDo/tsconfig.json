@@ -6,16 +6,13 @@
     "skipLibCheck": true,
 
     /* url mapping */
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@": ["./src"],
-      "@/*": ["./src/*"],
-      "@pages": ["./src/pages/*"],
-      "@components": ["./src/components/*"],
-      "@layout": ["./src/layout/*"],
-      "@utils": ["./src/utils/*"],
-      "@images": ["./src/images/*"],
-      "@types": ["./src/types/*"]
+      "@/*": ["*"],
+      "@components/*": ["components/*"],
+      "@images/*": ["images/*"],
+      "@pages/*": ["pages/*"],
+      "@layout/*": ["layout/*"]
     },
 
     /* Bundler mode */

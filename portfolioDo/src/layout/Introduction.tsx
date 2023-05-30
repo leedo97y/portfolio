@@ -1,4 +1,4 @@
-import IntroduceComponents from '../components/IntroduceComponents';
+import IntroduceComponents from '@components/IntroduceComponents';
 
 const Introduction: React.FC = () => {
   return (

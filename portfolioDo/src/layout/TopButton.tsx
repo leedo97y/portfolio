@@ -1,4 +1,4 @@
-import Top from '../images/top.png';
+import Top from '@images/top.png';
 
 const topButton: React.FC = () => {
   const onClickTopBtn = () => {

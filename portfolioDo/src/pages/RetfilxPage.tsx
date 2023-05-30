@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PortfolioDataType } from '../types/dataType';
-import retfilxMain from '../images/retfilxMain.png';
-import netfilx from '../images/netfilxlogo.png';
+import retfilxMain from '@images/retfilxMain.png';
+import netfilx from '@images/netfilxlogo.png';
 
 const RetfilxPage: React.FC = () => {
   const [data, setData] = useState<PortfolioDataType>();

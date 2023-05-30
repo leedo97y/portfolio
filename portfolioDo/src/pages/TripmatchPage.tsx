@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PortfolioDataType } from '../types/dataType';
-import tripmatchMain from '../images/tripmatchMain.png';
-import tripmatch from '../images/tripmatch.png';
+import tripmatchMain from '@images/tripmatchMain.png';
+import tripmatch from '@images/tripmatch.png';
 
 const TripmatchPage: React.FC = () => {
   const [data, setData] = useState<PortfolioDataType>();

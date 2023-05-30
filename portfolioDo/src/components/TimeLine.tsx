@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PortfolioDataType } from '../types/dataType';
-import tomutoMain from '../images/tomatoMain.png';
-import tripmatchMain from '../images/tripmatchMain.png';
-import friedeggMain from '../images/friedeggMain.png';
-import retfilxMain from '../images/retfilxMain.png';
-import weatherMain from '../images/weatherMain.png';
+import tomutoMain from '@images/tomatoMain.png';
+import tripmatchMain from '@images/tripmatchMain.png';
+import friedeggMain from '@images/friedeggMain.png';
+import retfilxMain from '@images/retfilxMain.png';
+import weatherMain from '@images/weatherMain.png';
 
 const TimeLine: React.FC = () => {
   const [data, setData] = useState<PortfolioDataType>();

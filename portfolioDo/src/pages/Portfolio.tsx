@@ -1,8 +1,8 @@
-import Header from '../layout/Header';
-import Profile from '../layout/Profile';
-import Projects from '../layout/Projects';
-import chat from '../images/chat.png';
-import TopButton from '../layout/TopButton';
+import Header from '@layout/Header';
+import Profile from '@layout/Profile';
+import Projects from '@layout/Projects';
+import chat from '@images/chat.png';
+import TopButton from '@layout/TopButton';
 
 const Portfolio: React.FC = () => {
   return (

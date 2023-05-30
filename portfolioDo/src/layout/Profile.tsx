@@ -1,6 +1,5 @@
-import IntroduceComponents from '../components/IntroduceComponents';
-import ProfileText from '../components/ProfileText';
-// import ProfileImage from '../images/myImage2.png';
+import IntroduceComponents from '@components/IntroduceComponents';
+import ProfileText from '@components/ProfileText';
 
 const Profile: React.FC = () => {
   return (
@@ -14,7 +13,6 @@ const Profile: React.FC = () => {
         </p>
       </div>
       <div className='flex flex-row justify-start gap-20 box-border w-auto h-full m-5 sm:w-auto sm:gap-10 md:w-auto md:gap-10 xs:flex-col xs:w-full xs:gap-10 xs:items-center xs:-ml-5 xxs:flex-col xxs:w-full xxs:gap-10 xxs:items-center'>
-        {/* <img className='w-80 h-80' src={ProfileImage} alt='profile Image' /> */}
         <ProfileText />
         <IntroduceComponents />
       </div>

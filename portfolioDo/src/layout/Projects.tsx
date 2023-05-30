@@ -1,5 +1,5 @@
 // import { useEffect, useState } from 'react';
-import TimeLine from '../components/TimeLine';
+import TimeLine from '@components/TimeLine';
 
 const Projects: React.FC = () => {
   return (

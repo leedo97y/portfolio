@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { PortfolioDataType } from '../types/dataType';
-import weatherMain from '../images/weatherMain.png';
-import weather from '../images/weather.png';
+import weatherMain from '@images/weatherMain.png';
+import weather from '@images/weather.png';
 
 const WeatherPage: React.FC = () => {
   const [data, setData] = useState<PortfolioDataType>();
