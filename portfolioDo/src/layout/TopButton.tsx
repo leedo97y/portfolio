@@ -14,7 +14,7 @@ const topButton: React.FC = () => {
         <img
           className='bg-transparent w-8 h-8 sm:w-5 sm:h-5 md:w-6 md:h-6 xs:w-5 xs:h-5'
           src={Top}
-          alt=''
+          alt='Top button'
         />
       </div>
     </div>
