@@ -6,6 +6,7 @@
   --primary: #1e1e1e;
   --secondary: rgba(255, 255, 255, 0.5);
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {

@@ -1,26 +1,14 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import TimeLine from '../components/TimeLine';
 
 const Projects: React.FC = () => {
-  const [scrollPosition, setScrollPosition] = useState<number>(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(window.scrollY);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  console.log(scrollPosition);
   return (
-    <div className='flex flex-col mt-10 justify-center w-full'>
-      <div className='m-2 pb-2 scroll-pb-24'>
-        <p className='w-full text-2xl font-bold pl-2 bg-blue-900 p-[0.5px]'>
+    <div className='flex flex-col mt-10 justify-center w-full h-full sm:w-fit sm:mt-4 md:w-fit md:mt-8 xs:w-fit xs:mt-2'>
+      <div className='m-2 pb-2 scroll-pb-24 w-auto'>
+        <p
+          id='project'
+          className='text-2xl font-bold mt-1 pl-2 bg-blue-900 p-[0.5px] sm:w-full md:w-full sm:text-sm md:text-base xs:w-full xs:text-sm'
+        >
           Projects.
         </p>
       </div>
