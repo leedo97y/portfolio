@@ -1,10 +1,10 @@
 const IntroComponents: React.FC = () => {
   return (
-    <div className='flex flex-col gap-5 border p-8 w-fit h-fit justify-center sm:w-fit sm:h-fit sm:pt-2 sm:-pl-2 sm:border-none md:w-fit md:h-fit md:p-7 xs:w-fit xs:p-5 '>
-      <p className='font-semibold text-l sm:text-sm md:text-base xs:text-xs'>
+    <div className='flex flex-col gap-5 border p-8 w-fit h-fit justify-center sm:w-fit sm:h-fit sm:pt-2 sm:-pl-2 sm:border-none md:w-fit md:h-fit md:p-7 xs:w-fit xs:p-5 xxs:w-fit xxs:p-5 xxs:-ml-5 '>
+      <p className='font-semibold text-l sm:text-sm md:text-base xs:text-xs xxs:text-xs'>
         소통을 잘하는 프론트엔드 개발자 이도연 입니다.
       </p>
-      <div className='ml-5 sm:ml-0 md:ml-4 sm:text-xs md:text-sm xs:text-[10px] xs:ml-0'>
+      <div className='ml-5 sm:ml-0 md:ml-4 sm:text-xs md:text-sm xs:text-[10px] xs:ml-0 xxs:text-[10px] xxs:ml-0'>
         <p className='mb-2'>📍 뚜렷한 목표 의식을 가지고 있습니다.</p>
         <p>
           UI / UX등 사용자의 사용성을 높일 수 있는 웹 페이지를 만드는 것,
@@ -13,7 +13,7 @@ const IntroComponents: React.FC = () => {
           목표입니다.
         </p>
       </div>
-      <div className='ml-5 sm:ml-0 md:ml-4 sm:text-xs md:text-sm xs:text-[10px] xs:ml-0'>
+      <div className='ml-5 sm:ml-0 md:ml-4 sm:text-xs md:text-sm xs:text-[10px] xs:ml-0 xxs:text-[10px] xxs:ml-0'>
         <p className='mb-2'>📍 효율적인 소통을 추구합니다.</p>
         <p>
           협업을 진행할 때 제일 중요한 것은 소통이라고 생각합니다.

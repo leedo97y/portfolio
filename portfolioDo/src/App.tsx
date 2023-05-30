@@ -10,7 +10,7 @@ import WeatherPage from './pages/WeatherPage';
 
 function App() {
   return (
-    <div className='w-full h-screen box-border'>
+    <div className='w-full h-screen box-border xxs:w-[165%] xxs:h-max'>
       <Routes>
         <Route path='/' element={<Portfolio />} />
         <Route path='/tomuto' element={<TomutoPage />} />
