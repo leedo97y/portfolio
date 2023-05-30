@@ -1,6 +1,6 @@
 const Header: React.FC = () => {
   return (
-    <div className='grid grid-cols-2 gap-4 justify-between w-full h-20 xs:w-full'>
+    <div className='grid grid-cols-2 gap-4 justify-between w-full h-20 xs:w-full xxs:w-full'>
       <h3 className='w-full h-28 m-8 text-3xl font-bold italic sm:text-lg md:text-xl xs:text-lg xxs:text-lg'>
         @leedo97y
       </h3>

@@ -5,7 +5,7 @@ import ProfileText from '../components/ProfileText';
 const Profile: React.FC = () => {
   return (
     <div className='flex flex-col w-fit h-full sm:w-fit md:w-fit xs:w-full xs:-mt-5 xxs:w-fit xxs:-mt-5'>
-      <div className='m-2 pb-2 w-auto sm:w-auto md:w-auto xs:w-auto xxs:w-[102%]'>
+      <div className='m-2 pb-2 w-auto sm:w-auto md:w-auto xs:w-auto xxs:w-[101%]'>
         <p
           id='profile'
           className='text-2xl font-bold pl-2 bg-blue-900 p-[0.5px] mt-1 sm:text-sm md:text-base xs:text-sm xxs:text-sm'

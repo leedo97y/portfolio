@@ -180,7 +180,7 @@ const TimeLine: React.FC = () => {
                   .join(', ')}
               </p>
             </div>
-            <p className='mb-3 text-neutra l-500 dark9ext-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug  md:text-xs md:w-96 xs:text-[10px] xs:leading-tightxxs:text-[9px] xxs:leading-tight whitespace-pre-wrap'>
+            <p className='mb-3 text-neutra l-500 dark9ext-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug  md:text-xs md:w-96 xs:text-[10px] xs:leading-tight xxs:text-[9px] xxs:leading-tight whitespace-pre-wrap'>
               {data?.project[2].shortDesc}
               <br />
             </p>
@@ -238,7 +238,7 @@ const TimeLine: React.FC = () => {
                   .join(', ')}
               </p>
             </div>
-            <p className='mb-3 text-neutra l-500 dark9ext-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug  md:text-xs md:w-96 xs:text-[10px] xs:leading-tightxxs:text-[9px] xxs:leading-tight whitespace-pre-wrap'>
+            <p className='mb-3 text-neutra l-500 dark9ext-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug  md:text-xs md:w-96 xs:text-[10px] xs:leading-tight xxs:text-[9px] xxs:leading-tight whitespace-pre-wrap'>
               {data?.project[1].shortDesc}
             </p>
             <Link to='/friedegg'>
@@ -293,7 +293,7 @@ const TimeLine: React.FC = () => {
                   .join(', ')}
               </p>
             </div>
-            <p className='mb-3 text-neutra l-500 dark9ext-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug  md:text-xs md:w-96 xs:text-[10px] xs:leading-tightxxs:text-[9px] xxs:leading-tight whitespace-pre-wrap'>
+            <p className='mb-3 text-neutra l-500 dark9ext-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug  md:text-xs md:w-96 xs:text-[10px] xs:leading-tight xxs:text-[9px] xxs:leading-tight whitespace-pre-wrap'>
               {data?.project[0].shortDesc}
             </p>
             <Link to='/weather'>
