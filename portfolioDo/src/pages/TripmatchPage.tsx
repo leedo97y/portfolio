@@ -51,15 +51,18 @@ const TripmatchPage: React.FC = () => {
           </p>
           <div>
             <p className='font-bold text-base mb-1 xxs:text-xs sm:text-base xs:text-xs'>
-              Github.{' '}
+              Github.
             </p>
-            <a className='text-sky-600 xxs:text-xs sm:text-sm xs:text-xs'>
+            <a
+              href={data?.project[3].repoUrl}
+              className='text-sky-600 xxs:text-xs sm:text-sm xs:text-xs'
+            >
               {data?.project[3].repoUrl}
             </a>
           </div>
           <div>
             <p className=' font-bold text-base mb-1 xxs:text-xs sm:text-base xs:text-xs'>
-              WebSite.{' '}
+              WebSite.
             </p>
             <a
               className='text-sky-600 xxs:text-xs sm:text-sm xs:text-xs'

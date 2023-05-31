@@ -53,7 +53,10 @@ const RetfilxPage: React.FC = () => {
             <p className='font-bold text-base mb-1 xxs:text-xs sm:text-base xs:text-xs'>
               Github.
             </p>
-            <a className='text-blue-600 xxs:text-xs sm:text-sm xs:text-xs'>
+            <a
+              href={data?.project[2].repoUrl}
+              className='text-blue-600 xxs:text-xs sm:text-sm xs:text-xs'
+            >
               {data?.project[2].repoUrl}
             </a>
           </div>
@@ -61,7 +64,10 @@ const RetfilxPage: React.FC = () => {
             <p className=' font-bold text-base mb-1 xxs:text-xs sm:text-base xs:text-xs'>
               WebSite.
             </p>
-            <a className='text-blue-600 xxs:text-xs sm:text-sm xs:text-xs'>
+            <a
+              href={data?.project[2].webUrl}
+              className='text-blue-600 xxs:text-xs sm:text-sm xs:text-xs'
+            >
               {data?.project[2].webUrl}
             </a>
           </div>

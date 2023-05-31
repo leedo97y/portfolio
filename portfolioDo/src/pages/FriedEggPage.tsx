@@ -54,7 +54,10 @@ const FriedEggPage: React.FC = () => {
             <p className='font-bold text-base mb-1 xxs:text-xs xs:text-xs'>
               Github.
             </p>
-            <a className='text-blue-600 xxs:text-xs xs:text-xs'>
+            <a
+              href={data?.project[1].repoUrl}
+              className='text-blue-600 xxs:text-xs xs:text-xs'
+            >
               {data?.project[1].repoUrl}
             </a>
           </div>
