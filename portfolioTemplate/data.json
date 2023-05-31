@@ -29,8 +29,8 @@
       "videoUrl": "영상이 있다면 추가해 주세요. 빼거나 optional로 처리해도 좋습니다.",
       "webUrl": "웹페이지가 있다면 추가해 주세요.",
       "isTeam": true,
-      "percent": "기여도를 작성해주세요 100%",
-      "teamInfo": "FE 2 누구와 BE 2 하셨나요",
+      "percent": "기여도 작성 칸",
+      "teamInfo": "팀원 정보 작성 칸",
       "period": ["2022. 02", "2022. 03"],
       "stack": ["HTML", "CSS", "JavaScript"]
     },

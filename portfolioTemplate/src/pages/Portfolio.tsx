@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Header from "@layouts/Header";
 import Profile from "@layouts/Profile";
 import Projects from "@layouts/Projects";
@@ -5,6 +6,24 @@ import TestMain from "@images/testMain.png";
 import TopButton from "@layouts/TopButton";
 
 const Portfolio: React.FC = () => {
+  const [data, setData] = useState<any>();
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const fetchData = await fetch("./data.json").then((res) => res.json());
+
+        if (fetchData) {
+          setData(fetchData);
+        }
+      } catch (err: unknown) {
+        console.error(err);
+      }
+    };
+
+    getData();
+  }, []);
+
   return (
     <>
       <Header />
@@ -15,8 +34,8 @@ const Portfolio: React.FC = () => {
             alt="Test image"
             className="w-[5rem] h-[5rem] mr-5 ml-5 sm:w-[3rem] sm:h-[3rem] sm:mr-3 sm:ml-3 md:w-[4rem] md:h-[4rem] md:mr-4 md:ml-4 xs:w-[3rem] xs:h-[3rem] xs:ml-3 xxs:w-[3rem] xxs:h-[3rem] xxs:ml-3"
           />
-          <p className="text-4xl font-bold mt-8 mb-10 pt-4 sm:text-2xl md:text-3xl xs:text-xl xs:mt-0 xxs:text-base xxs:mt-0">
-            ㅇㅇㅇ의 포트폴리오 입니다.
+          <p className="text-4xl font-bold mt-8 mb-10 pt-4 pl-2 sm:text-2xl md:text-3xl xs:text-xl xs:mt-0 xxs:text-base xxs:mt-0">
+            {data?.resumeTitle.title}
           </p>
         </div>
         <Profile />

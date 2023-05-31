@@ -46,11 +46,11 @@ const TimeLine: React.FC = () => {
             <div className="w-full flex flex-col gap-5 mt-2 sm:w-full sm:gap-2 md:w-full md:gap-3">
               <img
                 src={TestMain}
-                alt="tomuto main image"
+                alt="main image"
                 className="w-full sm:w-[70%] md:w-[90%] xs:w-[70%] xxs:w-[70%]"
               />
               <p className="text-sm sm:text-xs md:text-xs xs:text-xs xxs:text-xs mb-2 italic sm:w-[70%] md:w-[90%] xs:w-[50%] xxs:w-[50%]">
-                {data?.project[1].stack}
+                {data?.project[1].stack.join(", ")}
               </p>
             </div>
             <p className="mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug md:text-xs md:w-96 xs:text-[9px] xs:leading-tight xxs:text-[9px] xxs:leading-tight whitespace-pre-wrap">
@@ -91,11 +91,11 @@ const TimeLine: React.FC = () => {
             <div className="w-full flex flex-col gap-5 mt-2 sm:w-full sm:gap-2 md:w-full md:gap-3">
               <img
                 src={TestMain}
-                alt="tripmatch main image"
+                alt="main image"
                 className="w-full sm:w-[70%] md:w-[90%] xs:w-[70%] xxs:w-[70%]"
               />
               <p className="text-sm sm:text-xs md:text-xs xs:text-xs xxs:text-xs mb-2 italic sm:w-[70%] md:w-[90%] xs:w-[50%] xxs:w-[50%]">
-                {data?.project[0].stack}
+                {data?.project[0].stack.join(", ")}
               </p>
             </div>
             <p className="mb-3 text-neutral-500 dark:text-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug md:text-xs md:w-96 xs:text-[9px] xs:leading-tight xxs:text-[9px] xxs:leading-tight whitespace-pre-wrap">
@@ -138,11 +138,11 @@ const TimeLine: React.FC = () => {
             <div className="w-full flex flex-col gap-5 mt-2 sm:w-full sm:gap-2 md:w-full md:gap-3">
               <img
                 src={TestMain}
-                alt="friedegg main image"
+                alt="main image"
                 className="w-full sm:w-[70%] md:w-[90%] xs:w-[70%] xxs:w-[70%]"
               />
               <p className="text-sm sm:text-xs md:text-xs xs:text-xs xxs:text-xs mb-2 italic sm:w-[70%] md:w-[90%] xs:w-[50%] xxs:w-[50%]">
-                {data?.project[1].stack}
+                {data?.project[1].stack.join(", ")}
               </p>
             </div>
             <p className="mb-3 text-neutra l-500 dark9ext-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug  md:text-xs md:w-96 xs:text-[10px] xs:leading-tight xxs:text-[9px] xxs:leading-tight whitespace-pre-wrap">
@@ -183,11 +183,11 @@ const TimeLine: React.FC = () => {
             <div className="w-full flex flex-col gap-5 mt-2 sm:w-fit sm:gap-3 md:w-fit md:gap-3">
               <img
                 src={TestMain}
-                alt="weather main image"
+                alt="main image"
                 className="w-full sm:w-[70%] md:w-[90%] xs:w-[70%] xxs:w-[70%]"
               />
               <p className="text-sm sm:text-xs xs:text-xs xxs:text-xs md:text-xs mb-2 italic sm:w-[70%] md:w-[90%] xs:w-[50%] xxs:w-[50%]">
-                {data?.project[0].stack}
+                {data?.project[0].stack.join(", ")}
               </p>
             </div>
             <p className="mb-3 text-neutra l-500 dark9ext-neutral-300 w-96 text-sm sm:text-[10px] sm:w-96 sm:leading-snug  md:text-xs md:w-96 xs:text-[10px] xs:leading-tight xxs:text-[9px] xxs:leading-tight whitespace-pre-wrap">

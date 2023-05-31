@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import TestMain from "@images/TestMain.png";
+import TestMain from "@images/testMain.png";
 
 const TestPage: React.FC = () => {
   const [data, setData] = useState<any>();
@@ -53,7 +53,10 @@ const TestPage: React.FC = () => {
               <p className="font-bold text-base mb-1 xxs:text-sm sm:text-base xs:text-sm">
                 Github.
               </p>
-              <a className="text-sky-600 xxs:text-xs sm:text-sm xs:text-xs">
+              <a
+                href={data?.project[0].repoUrl}
+                className="text-sky-600 xxs:text-xs sm:text-sm xs:text-xs"
+              >
                 {data?.project[0].repoUrl}
               </a>
             </div>
@@ -61,8 +64,22 @@ const TestPage: React.FC = () => {
               <p className=" font-bold text-base mb-1 xxs:text-sm sm:text-base xs:text-sm">
                 WebSite.
               </p>
-              <a className="text-sky-600 xxs:text-xs sm:text-sm xs:text-xs">
+              <a
+                href={data?.project[0].webUrl}
+                className="text-sky-600 xxs:text-xs sm:text-sm xs:text-xs"
+              >
                 {data?.project[0].webUrl}
+              </a>
+            </div>
+            <div>
+              <p className=" font-bold text-base mb-1 xxs:text-sm sm:text-base xs:text-sm">
+                Video.
+              </p>
+              <a
+                href={data?.project[0].videoUrl}
+                className="text-sky-600 xxs:text-xs sm:text-sm xs:text-xs"
+              >
+                {data?.project[0].videoUrl}
               </a>
             </div>
           </div>
